@@ -106,15 +106,18 @@
     }
 
     .result {
-      display: none;
-      margin-top: 18px;
-      animation: pop .35s ease;
-    }
+  display: none;
+  margin-top: 18px;
+  text-align: center;
+  animation: pop .35s ease;
+}
 
     .result h2 {
-      font-size: clamp(30px, 4.5vw, 46px);
-      margin: 10px 0;
-    }
+  font-size: clamp(44px, 8vw, 72px);
+  margin: 10px 0 16px;
+  text-align: center;
+  animation: yayPop 0.6s ease-out both;
+}
 
     .fireworks {
       width: min(380px, 90vw);
@@ -126,6 +129,20 @@
       from { transform: scale(.96); opacity: 0; }
       to { transform: scale(1); opacity: 1; }
     }
+    
+    @keyframes yayPop {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
   </style>
 </head>
 
@@ -302,6 +319,7 @@
   </script>
 </body>
 </html>
+
 
 
 
