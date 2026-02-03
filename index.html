@@ -50,14 +50,18 @@
       box-shadow: 0 18px 60px rgba(0,0,0,.15);
     }
 
-    .art {
-  width: min(260px, 80vw);
-  margin: 0 auto 10px;
-  display: block;
-  filter: drop-shadow(0 10px 14px rgba(0,0,0,.12));
-  transform: translateX(-6px);
+    .art-wrap {
+  display: flex;
+  justify-content: center;
 }
 
+    .art {
+  width: min(260px, 80vw);
+  margin-bottom: 10px;
+  display: block;
+  filter: drop-shadow(0 10px 14px rgba(0,0,0,.12));
+  transform: translateX(-14px);
+}
     h1 {
       font-size: clamp(26px, 4vw, 44px);
       margin: 12px 0 18px;
@@ -152,7 +156,8 @@
 
   <main class="card">
     <!-- ANIMAL WITH HEART -->
-    <svg class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+    <div class="art-wrap">
+  <svg class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="fur" x1="0" x2="1">
           <stop offset="0" stop-color="#f7c7a1"/>
@@ -188,6 +193,7 @@
                C198 148 194 144 190 144Z"
             fill="#ff7aa2"/>
     </svg>
+</div>
 
     <h1 id="question">Robielle, will you be my valentine?</h1>
 
@@ -320,6 +326,7 @@
   </script>
 </body>
 </html>
+
 
 
 
